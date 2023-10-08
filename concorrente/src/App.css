@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #7bafd4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #13294b;
+}
+
+.App-body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: bottom;
+  justify-content: center;
+  color: black;
+}
+
+p.yes {
+  font-size: 8rem;
+  font-family: Arial;
+  color: green;
+}
+
+p.no {
+  font-size: 8rem;
+  font-family: Arial;
+  color: red;
+}
