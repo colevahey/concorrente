@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  height: 100vh;
   font-family: Arial, sans-serif;
 }
 
@@ -12,7 +11,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #13294b;
-  height: 11vh;
+  height: 11dvh;
 }
 
 .App-body {
@@ -22,7 +21,7 @@
   align-items: bottom;
   justify-content: center;
   color: black;
-  height: 89vh;
+  height: 89dvh;
 }
 
 p.yes {
