@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
 .App-header {
@@ -11,6 +12,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #13294b;
+  height: 11vh;
 }
 
 .App-body {
@@ -20,16 +22,17 @@
   align-items: bottom;
   justify-content: center;
   color: black;
+  height: 89vh;
 }
 
 p.yes {
-  font-size: 8rem;
-  font-family: Arial;
+  font-size: 120pt;
+  font-weight: bold;
   color: green;
 }
 
 p.no {
-  font-size: 8rem;
-  font-family: Arial;
+  font-size: 120pt;
+  font-weight: bold;
   color: red;
 }
