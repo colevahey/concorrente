@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
+import { ConferenceStandingsTable } from './ConferenceStandingsTable/ConferenceStandingsTable';
 
 function App() {
   const uncUrl = 'https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/unc/schedule';
@@ -78,6 +79,7 @@ function App() {
             ("Rank: " + (uncInfo(teamData).rank !== undefined ? uncInfo(teamData).rank : "NR"))
           }
         </p>
+        <ConferenceStandingsTable/>
       </div>
     </div>
   );
