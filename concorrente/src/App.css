@@ -24,6 +24,15 @@
   height: 89dvh;
 }
 
+.app-text {
+  margin: auto;
+}
+
+p.stats {
+  margin-top: 2dvh;
+  margin-bottom: 6dvh;
+}
+
 p.yes {
   font-size: 120pt;
   font-weight: bold;

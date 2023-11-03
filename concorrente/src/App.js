@@ -53,17 +53,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+        <p className={"app-text"}>
           did unc win
         </p>
       </header>
       <div className="App-body">
-        <p className={determineResult(scheduleData) === undefined ? "" : determineResult(scheduleData).didUncWin ? "yes" : "no"}>
+        <p className={"app-text " + (determineResult(scheduleData) === undefined ? "" : determineResult(scheduleData).didUncWin ? "yes" : "no")}>
           {
             determineResult(scheduleData) === undefined ? "" : determineResult(scheduleData).didUncWin ? "YES" : "NO"
           }
         </p>
-        <p>
+        <p className="app-text stats">
           {
             determineResult(scheduleData) === undefined ? "" :
             ((determineResult(scheduleData).didUncWin ? "W " : "L") + " " + determineResult(scheduleData).score)
@@ -79,8 +79,8 @@ function App() {
             ("Rank: " + (uncInfo(teamData).rank !== undefined ? uncInfo(teamData).rank : "NR"))
           }
         </p>
-        <ConferenceStandingsTable/>
       </div>
+      <ConferenceStandingsTable/>
     </div>
   );
 }
