@@ -1,0 +1,32 @@
+.scroll-button {
+    width: 100dvw;
+    background-color: white;
+    color: darkgray;
+    border: 0px;
+    border-top: 1px solid lightgrey;
+    border-radius: 0px;
+    height: 7dvh;
+    margin-bottom: 6px;
+}
+
+.scroll-button:hover,
+.scroll-button:focus-visible,
+:not(.btn-check)+.scroll-button:active,
+:not(.btn-check)+.scroll-button:active:focus-visible {
+    background-color: white;
+    color: gray;
+    border-top: 1px solid lightgrey;
+    box-shadow: none;
+}
+
+.scroll-button:hover .scroll-arrow {
+    filter: opacity(0.2) drop-shadow(0 0 0 darkgray);
+}
+
+.scroll-arrow {
+    margin-bottom: 1dvh;
+    height: 23px;
+    width: 65px;
+    filter: opacity(0.1) drop-shadow(0 0 0 darkgray);
+    transition: all 0.25s ease;
+}

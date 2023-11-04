@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
 import { ConferenceStandingsTable } from './ConferenceStandingsTable/ConferenceStandingsTable';
+import { ScrollButton } from './ScrollButton/ScrollButton';
 
 function App() {
   const uncUrl = 'https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/unc/schedule';
@@ -79,6 +80,7 @@ function App() {
             ("Rank: " + (uncInfo(teamData).rank !== undefined ? uncInfo(teamData).rank : "NR"))
           }
         </p>
+        <ScrollButton target={document.querySelector("table")}/>
       </div>
       <ConferenceStandingsTable/>
     </div>
